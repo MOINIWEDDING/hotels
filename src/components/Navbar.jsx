@@ -51,7 +51,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-2">
           <Waves className={`h-6 w-6 ${scrolled ? 'text-lagoon-600' : 'text-white'}`} />
           <span
-            className={`font-display text-xl font-semibold tracking-wide ${
+            className={`font-display text-xl font-normal tracking-wide ${
               scrolled ? 'text-palm-900' : 'text-white'
             }`}
           >
@@ -64,7 +64,7 @@ export default function Navbar() {
             <button
               key={l.href}
               onClick={() => goHome(l.href)}
-              className={`text-sm font-medium tracking-wide transition-colors ${
+              className={`text-sm font-normal tracking-wide transition-colors ${
                 scrolled ? 'text-palm-800 hover:text-lagoon-600' : 'text-white/90 hover:text-white'
               }`}
             >
@@ -79,7 +79,7 @@ export default function Navbar() {
               {isAdmin && (
                 <Link
                   to="/admin"
-                  className={`flex items-center gap-1.5 text-sm font-medium ${
+                  className={`flex items-center gap-1.5 text-sm font-normal ${
                     scrolled ? 'text-palm-800' : 'text-white'
                   }`}
                 >
@@ -88,7 +88,7 @@ export default function Navbar() {
               )}
               <Link
                 to="/mi-cuenta"
-                className={`flex items-center gap-1.5 text-sm font-medium ${
+                className={`flex items-center gap-1.5 text-sm font-normal ${
                   scrolled ? 'text-palm-800' : 'text-white'
                 }`}
               >
@@ -102,7 +102,7 @@ export default function Navbar() {
             <>
               <Link
                 to="/login"
-                className={`text-sm font-medium ${scrolled ? 'text-palm-800' : 'text-white'}`}
+                className={`text-sm font-normal ${scrolled ? 'text-palm-800' : 'text-white'}`}
               >
                 Iniciar sesión
               </Link>
@@ -135,7 +135,7 @@ export default function Navbar() {
                 <button
                   key={l.href}
                   onClick={() => goHome(l.href)}
-                  className="py-2.5 text-left text-sm font-medium text-palm-800"
+                  className="py-2.5 text-left text-sm font-normal text-palm-800"
                 >
                   {l.label}
                 </button>
@@ -144,23 +144,23 @@ export default function Navbar() {
               {isAuthenticated ? (
                 <>
                   {isAdmin && (
-                    <Link to="/admin" onClick={() => setOpen(false)} className="py-2.5 text-sm font-medium text-palm-800">
+                    <Link to="/admin" onClick={() => setOpen(false)} className="py-2.5 text-sm font-normal text-palm-800">
                       Panel admin
                     </Link>
                   )}
-                  <Link to="/mi-cuenta" onClick={() => setOpen(false)} className="py-2.5 text-sm font-medium text-palm-800">
+                  <Link to="/mi-cuenta" onClick={() => setOpen(false)} className="py-2.5 text-sm font-normal text-palm-800">
                     Mi cuenta
                   </Link>
-                  <button onClick={handleSignOut} className="py-2.5 text-left text-sm font-medium text-palm-800">
+                  <button onClick={handleSignOut} className="py-2.5 text-left text-sm font-normal text-palm-800">
                     Cerrar sesión
                   </button>
                 </>
               ) : (
                 <>
-                  <Link to="/login" onClick={() => setOpen(false)} className="py-2.5 text-sm font-medium text-palm-800">
+                  <Link to="/login" onClick={() => setOpen(false)} className="py-2.5 text-sm font-normal text-palm-800">
                     Iniciar sesión
                   </Link>
-                  <Link to="/register" onClick={() => setOpen(false)} className="py-2.5 text-sm font-medium text-palm-800">
+                  <Link to="/register" onClick={() => setOpen(false)} className="py-2.5 text-sm font-normal text-palm-800">
                     Crear cuenta
                   </Link>
                 </>

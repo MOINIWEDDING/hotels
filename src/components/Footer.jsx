@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2">
               <Waves className="h-6 w-6 text-lagoon-300" />
-              <span className="font-display text-xl font-semibold text-white">
+              <span className="font-display text-xl font-normal text-white">
                 Santa Fe Sosúa
               </span>
             </div>
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-lagoon-300">
+            <p className="text-sm font-normal uppercase tracking-widest text-lagoon-300">
               Contacto
             </p>
             <ul className="mt-4 space-y-3 text-sm text-sand-100/80">
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-lagoon-300">
+            <p className="text-sm font-normal uppercase tracking-widest text-lagoon-300">
               Secciones
             </p>
             <ul className="mt-4 space-y-2 text-sm text-sand-100/80">

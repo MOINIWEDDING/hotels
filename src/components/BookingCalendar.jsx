@@ -65,10 +65,10 @@ export default function BookingCalendar({ room, onClose }) {
       <div className="max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-3xl bg-sand-50 p-6 shadow-soft sm:p-8">
         <div className="flex items-start justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-lagoon-600">
+            <p className="text-xs font-normal uppercase tracking-widest text-lagoon-600">
               Reservar
             </p>
-            <h3 className="mt-1 font-display text-2xl font-semibold text-palm-900">
+            <h3 className="mt-1 font-display text-2xl font-normal text-palm-900">
               {room.name}
             </h3>
           </div>
@@ -83,7 +83,7 @@ export default function BookingCalendar({ room, onClose }) {
 
         {status === 'success' ? (
           <div className="mt-8 rounded-2xl bg-lagoon-100 p-6 text-center">
-            <p className="font-semibold text-palm-900">¡Solicitud de reserva enviada!</p>
+            <p className="font-normal text-palm-900">¡Solicitud de reserva enviada!</p>
             <p className="mt-2 text-sm text-palm-700">
               Puedes ver el estado de tu reserva en "Mi cuenta".
             </p>
@@ -103,7 +103,7 @@ export default function BookingCalendar({ room, onClose }) {
                 classNames={{
                   day_selected: 'bg-lagoon-600 text-white',
                   day_range_middle: 'bg-lagoon-100 text-palm-900',
-                  day_today: 'font-bold text-lagoon-700',
+                  day_today: 'font-light text-lagoon-700',
                 }}
               />
             </div>
@@ -115,14 +115,14 @@ export default function BookingCalendar({ room, onClose }) {
               <div className="flex items-center gap-3">
                 <button
                   onClick={() => setGuests((g) => Math.max(1, g - 1))}
-                  className="h-7 w-7 rounded-full bg-sand-100 text-sm font-semibold"
+                  className="h-7 w-7 rounded-full bg-sand-100 text-sm font-normal"
                 >
                   −
                 </button>
-                <span className="w-4 text-center text-sm font-semibold">{guests}</span>
+                <span className="w-4 text-center text-sm font-normal">{guests}</span>
                 <button
                   onClick={() => setGuests((g) => Math.min(room.capacity, g + 1))}
-                  className="h-7 w-7 rounded-full bg-sand-100 text-sm font-semibold"
+                  className="h-7 w-7 rounded-full bg-sand-100 text-sm font-normal"
                 >
                   +
                 </button>
@@ -134,7 +134,7 @@ export default function BookingCalendar({ room, onClose }) {
                 <CalendarDays className="h-4 w-4 text-lagoon-600" />
                 {nights > 0 ? `${nights} noche${nights > 1 ? 's' : ''}` : 'Selecciona fechas'}
               </span>
-              <span className="font-display text-lg font-bold text-palm-900">
+              <span className="font-display text-lg font-light text-palm-900">
                 ${total || 0}
               </span>
             </div>

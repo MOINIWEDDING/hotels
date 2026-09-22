@@ -19,7 +19,7 @@ export default function DayPass() {
 
         <AnimatedSection className="mx-auto max-w-2xl text-center">
           <span className="section-eyebrow">Vive el día</span>
-          <h2 className="mt-3 text-3xl font-semibold text-palm-900 sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-light text-palm-900 sm:text-4xl">
             Planes Day Pass
           </h2>
           <p className="mt-4 text-palm-700">
@@ -41,8 +41,8 @@ export default function DayPass() {
               }`}
             >
               <Sun className={`h-8 w-8 ${i === 1 ? 'text-lagoon-300' : 'text-lagoon-500'}`} />
-              <h3 className="mt-5 text-xl font-semibold">{plan.name}</h3>
-              <p className="mt-2 text-3xl font-display font-bold">
+              <h3 className="mt-5 text-xl font-normal">{plan.name}</h3>
+              <p className="mt-2 text-3xl font-display font-light">
                 ${plan.price}
                 <span className="text-sm font-normal opacity-70"> / persona</span>
               </p>

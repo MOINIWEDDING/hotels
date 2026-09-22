@@ -31,12 +31,12 @@ export default function Login() {
       <div className="w-full max-w-md rounded-3xl bg-sand-50 p-8 shadow-soft sm:p-10">
         <Link to="/" className="flex items-center justify-center gap-2">
           <Waves className="h-6 w-6 text-lagoon-600" />
-          <span className="font-display text-xl font-semibold text-palm-900">
+          <span className="font-display text-xl font-normal text-palm-900">
             Santa Fe Sosúa
           </span>
         </Link>
 
-        <h1 className="mt-8 text-center text-2xl font-semibold text-palm-900">
+        <h1 className="mt-8 text-center text-2xl font-light text-palm-900">
           Inicia sesión
         </h1>
         <p className="mt-1 text-center text-sm text-palm-600">
@@ -51,7 +51,7 @@ export default function Login() {
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <div>
-            <label className="text-xs font-medium text-palm-700">Correo electrónico</label>
+            <label className="text-xs font-normal text-palm-700">Correo electrónico</label>
             <input
               type="email"
               required
@@ -62,7 +62,7 @@ export default function Login() {
             />
           </div>
           <div>
-            <label className="text-xs font-medium text-palm-700">Contraseña</label>
+            <label className="text-xs font-normal text-palm-700">Contraseña</label>
             <input
               type="password"
               required
@@ -83,7 +83,7 @@ export default function Login() {
 
         <p className="mt-6 text-center text-sm text-palm-700">
           ¿No tienes cuenta?{' '}
-          <Link to="/register" className="font-semibold text-lagoon-700">
+          <Link to="/register" className="font-normal text-lagoon-700">
             Regístrate
           </Link>
         </p>

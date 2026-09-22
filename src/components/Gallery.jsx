@@ -17,7 +17,7 @@ export default function Gallery() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <AnimatedSection className="mx-auto max-w-2xl text-center">
           <span className="section-eyebrow">Un vistazo por dentro</span>
-          <h2 className="mt-3 text-3xl font-semibold text-palm-900 sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-light text-palm-900 sm:text-4xl">
             Galería
           </h2>
         </AnimatedSection>
@@ -35,7 +35,7 @@ export default function Gallery() {
                 style={{ backgroundImage: `url(${p.src})` }}
               />
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-palm-950/60 via-transparent to-transparent p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <span className="text-xs font-medium text-white">{p.label}</span>
+                <span className="text-xs font-normal text-white">{p.label}</span>
               </div>
             </AnimatedSection>
           ))}

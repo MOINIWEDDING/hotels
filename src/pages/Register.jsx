@@ -31,12 +31,12 @@ export default function Register() {
       <div className="w-full max-w-md rounded-3xl bg-sand-50 p-8 shadow-soft sm:p-10">
         <Link to="/" className="flex items-center justify-center gap-2">
           <Waves className="h-6 w-6 text-lagoon-600" />
-          <span className="font-display text-xl font-semibold text-palm-900">
+          <span className="font-display text-xl font-normal text-palm-900">
             Santa Fe Sosúa
           </span>
         </Link>
 
-        <h1 className="mt-8 text-center text-2xl font-semibold text-palm-900">
+        <h1 className="mt-8 text-center text-2xl font-light text-palm-900">
           Crea tu cuenta
         </h1>
         <p className="mt-1 text-center text-sm text-palm-600">
@@ -52,7 +52,7 @@ export default function Register() {
         {done ? (
           <div className="mt-8 rounded-2xl bg-lagoon-100 p-5 text-center text-sm text-palm-800">
             Cuenta creada. Revisa tu correo para confirmar tu cuenta y luego{' '}
-            <Link to="/login" className="font-semibold text-lagoon-700">
+            <Link to="/login" className="font-normal text-lagoon-700">
               inicia sesión
             </Link>
             .
@@ -60,7 +60,7 @@ export default function Register() {
         ) : (
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
             <div>
-              <label className="text-xs font-medium text-palm-700">Nombre completo</label>
+              <label className="text-xs font-normal text-palm-700">Nombre completo</label>
               <input
                 type="text"
                 required
@@ -71,7 +71,7 @@ export default function Register() {
               />
             </div>
             <div>
-              <label className="text-xs font-medium text-palm-700">Correo electrónico</label>
+              <label className="text-xs font-normal text-palm-700">Correo electrónico</label>
               <input
                 type="email"
                 required
@@ -82,7 +82,7 @@ export default function Register() {
               />
             </div>
             <div>
-              <label className="text-xs font-medium text-palm-700">Contraseña</label>
+              <label className="text-xs font-normal text-palm-700">Contraseña</label>
               <input
                 type="password"
                 required
@@ -105,7 +105,7 @@ export default function Register() {
 
         <p className="mt-6 text-center text-sm text-palm-700">
           ¿Ya tienes cuenta?{' '}
-          <Link to="/login" className="font-semibold text-lagoon-700">
+          <Link to="/login" className="font-normal text-lagoon-700">
             Inicia sesión
           </Link>
         </p>

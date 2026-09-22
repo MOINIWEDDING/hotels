@@ -12,7 +12,7 @@ export default function Accommodation() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <AnimatedSection className="mx-auto max-w-2xl text-center">
           <span className="section-eyebrow">Encuentra tu habitación</span>
-          <h2 className="mt-3 text-3xl font-semibold text-palm-900 sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-light text-palm-900 sm:text-4xl">
             Alojamiento
           </h2>
           <p className="mt-4 text-palm-700">
@@ -34,7 +34,7 @@ export default function Accommodation() {
                 style={{ backgroundImage: `url(${room.image})` }}
               />
               <div className="flex flex-1 flex-col p-6">
-                <h3 className="text-lg font-semibold text-palm-900">{room.name}</h3>
+                <h3 className="text-lg font-normal text-palm-900">{room.name}</h3>
                 <p className="mt-2 flex-1 text-sm text-palm-700">{room.description}</p>
 
                 <div className="mt-4 flex items-center gap-4 text-xs text-palm-600">
@@ -47,7 +47,7 @@ export default function Accommodation() {
                 </div>
 
                 <div className="mt-5 flex items-center justify-between">
-                  <p className="font-display text-xl font-bold text-palm-900">
+                  <p className="font-display text-xl font-light text-palm-900">
                     ${room.price}
                     <span className="text-xs font-normal text-palm-600"> / noche</span>
                   </p>

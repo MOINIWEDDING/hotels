@@ -47,8 +47,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        sans: ['"Inter"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Poppins"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['"Poppins"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         soft: '0 20px 60px -15px rgba(10, 40, 44, 0.35)',

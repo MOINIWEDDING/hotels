@@ -7,7 +7,7 @@ export default function Restaurant() {
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2 lg:px-10">
         <AnimatedSection effect="left" className="order-2 lg:order-1">
           <span className="section-eyebrow !text-lagoon-300">Sabores del Caribe</span>
-          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-light sm:text-4xl">
             Restaurante frente al mar
           </h2>
           <p className="mt-5 text-sand-100/85">
@@ -20,21 +20,21 @@ export default function Restaurant() {
             <div className="flex items-start gap-3">
               <Clock className="mt-0.5 h-5 w-5 text-lagoon-300" />
               <div>
-                <p className="text-sm font-semibold">Horario</p>
+                <p className="text-sm font-normal">Horario</p>
                 <p className="text-sm text-sand-100/70">8:00 am – 10:00 pm todos los días</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <UtensilsCrossed className="mt-0.5 h-5 w-5 text-lagoon-300" />
               <div>
-                <p className="text-sm font-semibold">Especialidad</p>
+                <p className="text-sm font-normal">Especialidad</p>
                 <p className="text-sm text-sand-100/70">Mariscos frescos y cocina dominicana</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-5 w-5 text-lagoon-300" />
               <div>
-                <p className="text-sm font-semibold">Ubicación</p>
+                <p className="text-sm font-normal">Ubicación</p>
                 <p className="text-sm text-sand-100/70">Terraza principal, frente a la playa</p>
               </div>
             </div>

@@ -18,7 +18,7 @@ export default function WeddingsEvents() {
 
           <AnimatedSection effect="right">
             <span className="section-eyebrow">Momentos inolvidables</span>
-            <h2 className="mt-3 text-3xl font-semibold text-palm-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-light text-palm-900 sm:text-4xl">
               Bodas y Eventos
             </h2>
             <p className="mt-4 text-palm-700">
@@ -41,7 +41,7 @@ export default function WeddingsEvents() {
                       <Icon className="h-5 w-5 text-lagoon-700" />
                     </div>
                     <div>
-                      <p className="font-semibold text-palm-900">{e.title}</p>
+                      <p className="font-normal text-palm-900">{e.title}</p>
                       <p className="mt-1 text-sm text-palm-700">{e.description}</p>
                     </div>
                   </AnimatedSection>

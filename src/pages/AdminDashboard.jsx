@@ -48,31 +48,31 @@ export default function AdminDashboard() {
   return (
     <div className="min-h-screen bg-sand-50 px-6 py-24 lg:px-10">
       <div className="mx-auto max-w-6xl">
-        <Link to="/" className="flex items-center gap-1.5 text-sm font-medium text-palm-700">
+        <Link to="/" className="flex items-center gap-1.5 text-sm font-normal text-palm-700">
           <ArrowLeft className="h-4 w-4" /> Volver al sitio
         </Link>
 
         <div className="mt-6 flex items-center gap-3">
           <LayoutDashboard className="h-7 w-7 text-lagoon-600" />
-          <h1 className="text-3xl font-semibold text-palm-900">Panel de administración</h1>
+          <h1 className="text-3xl font-light text-palm-900">Panel de administración</h1>
         </div>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-4">
           <div className="rounded-2xl border border-palm-800/10 bg-white p-5">
             <p className="text-xs text-palm-600">Reservas totales</p>
-            <p className="mt-1 text-2xl font-bold text-palm-900">{bookings.length}</p>
+            <p className="mt-1 text-2xl font-light text-palm-900">{bookings.length}</p>
           </div>
           <div className="rounded-2xl border border-palm-800/10 bg-white p-5">
             <p className="text-xs text-palm-600">Pendientes</p>
-            <p className="mt-1 text-2xl font-bold text-palm-900">{totals.pending || 0}</p>
+            <p className="mt-1 text-2xl font-light text-palm-900">{totals.pending || 0}</p>
           </div>
           <div className="rounded-2xl border border-palm-800/10 bg-white p-5">
             <p className="text-xs text-palm-600">Confirmadas</p>
-            <p className="mt-1 text-2xl font-bold text-palm-900">{totals.confirmed || 0}</p>
+            <p className="mt-1 text-2xl font-light text-palm-900">{totals.confirmed || 0}</p>
           </div>
           <div className="rounded-2xl border border-palm-800/10 bg-white p-5">
             <p className="text-xs text-palm-600">Ingresos confirmados</p>
-            <p className="mt-1 text-2xl font-bold text-palm-900">${totals.revenue}</p>
+            <p className="mt-1 text-2xl font-light text-palm-900">${totals.revenue}</p>
           </div>
         </div>
 
@@ -106,16 +106,16 @@ export default function AdminDashboard() {
               {bookings.map((b) => (
                 <tr key={b.id} className="border-b border-palm-800/5 last:border-0">
                   <td className="px-5 py-3">
-                    <p className="font-medium text-palm-900">{b.profiles?.full_name || '—'}</p>
+                    <p className="font-normal text-palm-900">{b.profiles?.full_name || '—'}</p>
                     <p className="text-xs text-palm-600">{b.profiles?.email}</p>
                   </td>
                   <td className="px-5 py-3">{b.room_name}</td>
                   <td className="px-5 py-3 text-xs">
                     {b.check_in} → {b.check_out}
                   </td>
-                  <td className="px-5 py-3 font-semibold">${b.total_price}</td>
+                  <td className="px-5 py-3 font-normal">${b.total_price}</td>
                   <td className="px-5 py-3">
-                    <span className={`rounded-full px-3 py-1 text-xs font-semibold capitalize ${statusStyles[b.status]}`}>
+                    <span className={`rounded-full px-3 py-1 text-xs font-normal capitalize ${statusStyles[b.status]}`}>
                       {b.status}
                     </span>
                   </td>
