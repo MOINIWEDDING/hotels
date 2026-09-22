@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Waves, User, LayoutDashboard, LogOut } from 'lucide-react'
+import { Menu, X, User, LayoutDashboard, LogOut } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 
 const links = [
@@ -48,15 +48,8 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-        <Link to="/" className="flex items-center gap-2">
-          <Waves className={`h-6 w-6 ${scrolled ? 'text-lagoon-600' : 'text-white'}`} />
-          <span
-            className={`font-display text-xl font-normal tracking-wide ${
-              scrolled ? 'text-palm-900' : 'text-white'
-            }`}
-          >
-            Santa Fe <span className="font-normal opacity-80">Sosúa</span>
-          </span>
+        <Link to="/" className="flex items-center">
+          <img src="/images/logo.png" alt="Santa Fe Club" className="h-11 w-auto lg:h-12" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">

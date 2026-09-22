@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Waves, Loader2 } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { isSupabaseConfigured } from '../lib/supabaseClient'
 
@@ -29,11 +29,8 @@ export default function Register() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-palm-950 px-6 py-16">
       <div className="w-full max-w-md rounded-3xl bg-sand-50 p-8 shadow-soft sm:p-10">
-        <Link to="/" className="flex items-center justify-center gap-2">
-          <Waves className="h-6 w-6 text-lagoon-600" />
-          <span className="font-display text-xl font-normal text-palm-900">
-            Santa Fe Sosúa
-          </span>
+        <Link to="/" className="flex items-center justify-center">
+          <img src="/images/logo.png" alt="Santa Fe Club" className="h-12 w-auto" />
         </Link>
 
         <h1 className="mt-8 text-center text-2xl font-light text-palm-900">

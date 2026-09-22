@@ -1,4 +1,4 @@
-import { Waves, MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react'
+import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react'
 import AnimatedSection from './AnimatedSection'
 
 export default function Footer() {
@@ -7,12 +7,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
         <AnimatedSection className="grid gap-12 lg:grid-cols-3">
           <div>
-            <div className="flex items-center gap-2">
-              <Waves className="h-6 w-6 text-lagoon-300" />
-              <span className="font-display text-xl font-normal text-white">
-                Santa Fe Sosúa
-              </span>
-            </div>
+            <img src="/images/logo.png" alt="Santa Fe Club" className="h-14 w-auto" />
             <p className="mt-4 max-w-xs text-sm text-sand-100/70">
               Day Pass, restaurante, bodas y eventos, y alojamiento frente al mar
               en la costa norte de República Dominicana.
