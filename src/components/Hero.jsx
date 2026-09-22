@@ -4,12 +4,12 @@ import { ChevronDown } from 'lucide-react'
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-end overflow-hidden bg-palm-950">
-      {/* Fondo: reemplaza por una foto real de Santa Fe en /public/images/hero.jpg */}
+      {/* Fondo: foto real de la piscina frente al mar de Santa Fe */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'linear-gradient(180deg, rgba(10,40,44,0.35) 0%, rgba(10,40,44,0.15) 40%, rgba(10,40,44,0.75) 100%), url(/images/hero.jpg)',
+            'linear-gradient(180deg, rgba(10,40,44,0.55) 0%, rgba(10,40,44,0.3) 35%, rgba(10,40,44,0.85) 100%), url(/images/hero.jpg)',
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-palm-950 via-transparent to-transparent" />
