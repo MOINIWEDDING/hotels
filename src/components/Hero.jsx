@@ -21,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-lagoon-200"
         >
-          Costa Norte · Sosúa, República Dominicana
+          Sosúa Ocean Village · Costa Norte, República Dominicana
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
@@ -29,7 +29,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="max-w-3xl text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-6xl"
         >
-          Refresca, relaja y redescubre los placeres simples de la vida
+          Tus vacaciones perfectas, todo en un solo lugar
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 24 }}
@@ -37,8 +37,10 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-5 max-w-xl text-base text-sand-100/90 sm:text-lg"
         >
-          Day pass, restaurante frente al mar, bodas y eventos, y alojamiento
-          boutique — todo en un mismo destino turquesa en el corazón de Sosúa.
+          Vive la experiencia como tú quieras: visítanos por un día y disfruta
+          de nuestros parques acuáticos con un Pasadía, o alójate con nosotros
+          en cómodas habitaciones, Bubble Glamping o amplias villas — con
+          acceso a parques, gastronomía y entretenimiento para toda la familia.
         </motion.p>
 
         <motion.div
@@ -51,7 +53,7 @@ export default function Hero() {
             Reservar mi estadía
           </a>
           <a href="#day-pass" className="btn-secondary !border-white/40 !bg-white/10 !text-white hover:!bg-white/20">
-            Ver planes Day Pass
+            Ver planes de Pasadía
           </a>
         </motion.div>
       </div>

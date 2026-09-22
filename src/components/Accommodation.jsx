@@ -48,7 +48,7 @@ export default function Accommodation() {
 
                 <div className="mt-5 flex items-center justify-between">
                   <p className="font-display text-xl font-light text-palm-900">
-                    ${room.price}
+                    Desde ${room.price}
                     <span className="text-xs font-normal text-palm-600"> / noche</span>
                   </p>
                   <button onClick={() => setSelectedRoom(room)} className="btn-primary !px-5 !py-2.5 text-xs">

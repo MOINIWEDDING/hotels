@@ -1,60 +1,65 @@
 // Contenido y fotos reales de Santa Fe Sosúa (subidas por el cliente).
 
+// Contenido real de Santa Fe / Sosúa Ocean Village, extraído de una copia
+// guardada por el cliente de la página oficial de Alojamiento (santafe.do).
+// Los precios son estimados de referencia — el sitio real no publica precio
+// fijo, muestra "Ver precios de alquiler" enlazando a su motor de reservas.
+
 export const rooms = [
   {
-    id: 'villa-laguna',
-    name: 'Villa Laguna',
+    id: 'ocean-village-deluxe',
+    name: 'Ocean Village Deluxe',
     description:
-      'Villa con cama tipo dosel de madera, vista directa a la piscina a través de puertas corredizas y terraza privada.',
-    price: 180,
-    capacity: 2,
+      'Resort y spa de lujo frente al mar con amplias villas y apartamentos. Restaurantes, bares, parque acuático, piscinas, gimnasio, canchas de tenis y centro de entretenimiento familiar.',
+    price: 220,
+    capacity: 6,
     image: '/images/room-1.jpg',
   },
   {
-    id: 'suite-palmar',
-    name: 'Suite Palmar',
+    id: 'sosua-ocean-village',
+    name: 'Sosúa Ocean Village',
     description:
-      'Suite con techos altos de madera, cama dosel y acceso directo al área de piscina rodeada de palmeras.',
-    price: 165,
+      'Apartamentos de 2 y 3 dormitorios, villas de 2, 3 y 4 dormitorios, y estudios acogedores — para alquiler a corto y largo plazo dentro de la comunidad residencial.',
+    price: 150,
+    capacity: 8,
+    image: '/images/room-4.jpg',
+  },
+  {
+    id: 'santa-fe-laguna-hotel',
+    name: 'Santa Fe Laguna Hotel',
+    description:
+      'Cómodas habitaciones estilo apartamento dentro del parque acuático Laguna SOV. Estadía 100% consumible: lo que pagas se convierte en crédito para restaurantes y gimnasio.',
+    price: 95,
     capacity: 3,
     image: '/images/room-2.jpg',
   },
   {
-    id: 'domo-glamping',
-    name: 'Domo Glamping',
+    id: 'bubble-glamping',
+    name: 'Santa Fe Bubble Glamping',
     description:
-      'Domo geodésico junto a la laguna, con terraza privada y tina exterior — una experiencia única de glamping en Santa Fe.',
+      'Domos junto a la laguna donde el lujo se encuentra con la naturaleza. Estadía 100% consumible, con acceso gratuito a Santa Fe y al parque acuático Laguna SOV al reservar directo.',
     price: 210,
     capacity: 2,
     image: '/images/room-3.jpg',
-  },
-  {
-    id: 'apartamento-familiar',
-    name: 'Apartamento Familiar',
-    description:
-      'Apartamento amplio con sala, comedor para 8 personas y cocina totalmente equipada, ideal para familias o grupos.',
-    price: 230,
-    capacity: 6,
-    image: '/images/room-4.jpg',
   },
 ]
 
 export const dayPassPlans = [
   {
     id: 'day-pass-clasico',
-    name: 'Day Pass Clásico',
+    name: 'Pasadía Clásico',
     price: 35,
     perks: ['Acceso a piscina y playa', 'Camastro y sombrilla', 'Uso de áreas verdes'],
   },
   {
     id: 'day-pass-premium',
-    name: 'Day Pass Premium',
+    name: 'Pasadía Premium',
     price: 65,
     perks: ['Todo lo del plan Clásico', 'Crédito de $20 en restaurante', 'Toallas y casillero'],
   },
   {
     id: 'day-pass-familiar',
-    name: 'Day Pass Familiar',
+    name: 'Pasadía Familiar',
     price: 110,
     perks: ['Hasta 4 personas', 'Acceso a zona infantil', 'Descuento en actividades acuáticas'],
   },

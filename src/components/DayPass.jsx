@@ -20,7 +20,7 @@ export default function DayPass() {
         <AnimatedSection className="mx-auto max-w-2xl text-center">
           <span className="section-eyebrow">Vive el día</span>
           <h2 className="mt-3 text-3xl font-light text-palm-900 sm:text-4xl">
-            Planes Day Pass
+            Planes de Pasadía
           </h2>
           <p className="mt-4 text-palm-700">
             Disfruta la piscina, la playa y los espacios verdes de Santa Fe sin

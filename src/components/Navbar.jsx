@@ -5,7 +5,7 @@ import { Menu, X, User, LayoutDashboard, LogOut } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 
 const links = [
-  { href: '#day-pass', label: 'Day Pass' },
+  { href: '#day-pass', label: 'Pasadía' },
   { href: '#restaurante', label: 'Restaurante' },
   { href: '#bodas-eventos', label: 'Bodas y Eventos' },
   { href: '#alojamiento', label: 'Alojamiento' },
@@ -49,7 +49,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
         <Link to="/" className="flex items-center">
-          <img src="/images/logo.png" alt="Santa Fe Club" className="h-11 w-auto lg:h-12" />
+          <img src="/images/logo.svg" alt="Santa Fe Club" className="h-11 w-auto lg:h-12" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">

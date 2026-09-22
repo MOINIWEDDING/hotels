@@ -30,14 +30,14 @@ export default function Register() {
     <div className="flex min-h-screen items-center justify-center bg-palm-950 px-6 py-16">
       <div className="w-full max-w-md rounded-3xl bg-sand-50 p-8 shadow-soft sm:p-10">
         <Link to="/" className="flex items-center justify-center">
-          <img src="/images/logo.png" alt="Santa Fe Club" className="h-12 w-auto" />
+          <img src="/images/logo.svg" alt="Santa Fe Club" className="h-12 w-auto" />
         </Link>
 
         <h1 className="mt-8 text-center text-2xl font-light text-palm-900">
           Crea tu cuenta
         </h1>
         <p className="mt-1 text-center text-sm text-palm-600">
-          Regístrate para reservar tu estadía o Day Pass.
+          Regístrate para reservar tu estadía o Pasadía.
         </p>
 
         {!isSupabaseConfigured && (

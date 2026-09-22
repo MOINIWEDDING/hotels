@@ -5,7 +5,36 @@ Day Pass, Restaurante, Bodas y Eventos, y Alojamiento en una sola experiencia,
 con animaciones al hacer scroll, sistema de usuarios (cliente/administrador) y
 reservas con calendario.
 
-## 📸 Fotos
+## 📌 Contenido real incorporado
+
+A partir de copias guardadas por el cliente de `santafe.do/es/accommodation`
+y de `santafeclub.do` (archivos `.mhtml`), se actualizó el sitio con
+información y assets reales en lugar de contenido de referencia:
+
+- **Logo**: ahora se usa el **SVG vectorial oficial** de `santafeclub.do`
+  (`public/images/logo.svg`), con el degradado dorado exacto de la marca
+  (`#CC974D → #FCDF74`). Reemplaza al PNG que había armado a mano a partir
+  de tus capturas — mismo diseño, pero ahora nítido a cualquier tamaño.
+- **Foto del hero**: foto aérea real de la entrada de Santa Fe con su
+  piscina infinita frente al mar (extraída del sitio oficial).
+- **Texto del hero**: usa el mensaje real de portada — "Tus vacaciones
+  perfectas, todo en un solo lugar" — y menciona Pasadía, Bubble Glamping,
+  habitaciones y villas tal como los describe el sitio oficial.
+- **Alojamiento**: las 4 categorías reales — Ocean Village Deluxe, Sosúa
+  Ocean Village, Santa Fe Laguna Hotel y Santa Fe Bubble Glamping.
+- **Teléfonos del footer**: los reales, con su etiqueta — +1 (829) 961-2269
+  (Pasadía) y +1 (829) 571-2111 (Alojamiento).
+- **Favicon**: recortado del mismo SVG oficial (antes era una captura mía a
+  mano).
+
+No se usaron dos fotos "banner" que venían en el `.mhtml` de santafeclub.do
+(una de personas saltando con globos, otra de una villa con piscina infinita
+genérica) porque tienen apariencia de fotografía de stock con licencia —no
+fotos propias de la propiedad— así que no las incorporé para evitar
+problemas de derechos. Si tienes licencia sobre ellas y quieres que las use,
+dímelo y las agrego.
+
+
 
 Las fotos reales que subiste ya están integradas en `public/images/`. Mapeo
 actual (puedes reemplazar cualquiera de estos archivos por otra foto sin
