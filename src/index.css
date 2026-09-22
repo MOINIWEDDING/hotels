@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-sand-50 text-palm-900 font-sans antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+::selection {
+  @apply bg-lagoon-300 text-palm-950;
+}
+
+/* Scrollbar minimalista */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f7f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #72d6d8;
+  border-radius: 999px;
+}
+
+.section-eyebrow {
+  @apply inline-block text-xs font-semibold tracking-[0.25em] uppercase text-lagoon-600;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-palm-800 px-7 py-3.5 text-sm font-semibold text-sand-50 shadow-soft transition-all duration-300 hover:bg-palm-700 hover:-translate-y-0.5 active:translate-y-0;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-palm-800/20 bg-white/70 px-7 py-3.5 text-sm font-semibold text-palm-800 backdrop-blur transition-all duration-300 hover:bg-white hover:-translate-y-0.5;
+}
+
+.btn-light {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-palm-900 shadow-soft transition-all duration-300 hover:bg-sand-100 hover:-translate-y-0.5;
+}
