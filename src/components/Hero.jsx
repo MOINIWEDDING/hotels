@@ -19,7 +19,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="mb-4 text-xs font-normal uppercase tracking-[0.35em] text-lagoon-200"
+          className="mb-4 text-xs font-bold uppercase tracking-[0.35em] text-lagoon-200"
         >
           Costa Norte · Sosúa, República Dominicana
         </motion.p>
@@ -27,7 +27,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="max-w-3xl text-4xl font-extralight leading-[1.1] text-white sm:text-5xl lg:text-6xl"
+          className="max-w-3xl text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-6xl"
         >
           Refresca, relaja y redescubre los placeres simples de la vida
         </motion.h1>
